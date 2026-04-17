@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inflación en Argentina hoy: IPC, acumulada e interanual</title>
+    <meta name="description" content="Consultá la inflación oficial en Argentina, IPC INDEC, inflación acumulada, interanual, historial mensual y calculadoras para actualizar montos y cuotas por inflación.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://inflacionhoy.ar/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Inflación en Argentina hoy: IPC, acumulada e interanual">
+    <meta property="og:description" content="Datos oficiales del IPC, historial mensual y calculadoras de inflación para Argentina.">
+    <meta property="og:url" content="https://inflacionhoy.ar/">
+    <meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:Redirect/file/La_Boca,_Buenos_Aires,_Argentina_(Unsplash).jpg?width=1200">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Inflación en Argentina hoy">
+    <meta name="twitter:description" content="IPC oficial, inflación acumulada, interanual y calculadoras útiles para Argentina.">
+    <meta name="twitter:image" content="https://commons.wikimedia.org/wiki/Special:Redirect/file/La_Boca,_Buenos_Aires,_Argentina_(Unsplash).jpg?width=1200">
+
+    <link rel="preconnect" href="https://commons.wikimedia.org">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Inflación en Argentina hoy: IPC, acumulada e interanual",
+        "description": "Página informativa con inflación oficial de Argentina, IPC INDEC, historial mensual y calculadoras para actualizar montos y cuotas por inflación.",
+        "inLanguage": "es-AR",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Inflación Hoy Argentina",
+          "url": "https://inflacionhoy.ar/"
+        },
+        "about": [
+          "inflación argentina hoy",
+          "ipc argentina",
+          "inflación acumulada argentina",
+          "inflación interanual argentina",
+          "calculadora inflación argentina"
+        ],
+        "dateModified": "2026-04-17",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Inflación Hoy Argentina"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Cuál fue la inflación de este mes en Argentina",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La inflación mensual corresponde al último dato oficial publicado por INDEC para el IPC Nacional. El sitio muestra el último período disponible en la serie cargada y la fecha de actualización del archivo local."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Cómo se calcula la inflación acumulada",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La inflación acumulada del año compara el índice IPC del último mes disponible contra el índice de diciembre del año anterior."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qué diferencia hay entre inflación mensual e interanual",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La inflación mensual compara el IPC contra el mes anterior. La interanual compara el IPC contra el mismo mes del año anterior."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Cómo saber cuánto perdió valor mi sueldo",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Podés ingresar tu sueldo o monto fijo en la calculadora, elegir el mes inicial y el mes final, y comparar el monto original contra el monto ajustado por IPC."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Cómo calcular una cuota ajustada por inflación",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La calculadora de cuotas permite simular una inflación mensual fija o aplicar variaciones históricas reales del IPC para estimar la evolución de una cuota."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "De dónde salen los datos",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los datos de inflación realizada provienen del IPC Nacional publicado por INDEC y disponible en Datos Argentina. Las expectativas REM del BCRA, si se agregan, deben tratarse como estimaciones y no como datos observados."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <nav class="topbar" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Inicio Inflación Hoy Argentina">Inflación Hoy Argentina</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mainNav">Menú</button>
+        <div class="nav-links" id="mainNav">
+          <a href="#resumen">Resumen</a>
+          <a href="#historial">Historial</a>
+          <a href="#calculadora-inflacion">Calculadora</a>
+          <a href="#cuotas">Cuotas</a>
+          <a href="#fuentes">Fuentes</a>
+        </div>
+      </nav>
+
+      <section class="hero" id="inicio" aria-labelledby="heroTitle">
+        <div class="container hero-content">
+          <p class="kicker">IPC oficial de Argentina</p>
+          <h1 id="heroTitle">Inflación en Argentina hoy: IPC, acumulada e interanual</h1>
+          <p class="hero-lead">Consultá la inflación oficial en Argentina con datos actualizados, calculá cuánto perdió o ganó valor tu plata y estimá cuotas ajustadas por inflación.</p>
+          <div class="hero-meta" aria-live="polite">
+            <span>Última actualización: <strong id="lastUpdatedHero">Cargando datos...</strong></span>
+            <span>Fuente: <strong>INDEC vía datos.gob.ar</strong></span>
+          </div>
+          <div class="cta-row">
+            <a class="button button-primary" href="#calculadora-inflacion">Calcular inflación</a>
+            <a class="button button-secondary" href="#historial">Ver historial</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="contenido">
+      <section class="section container" id="resumen" aria-labelledby="summaryTitle">
+        <div class="section-heading">
+          <p class="kicker">Resumen visual</p>
+          <h2 id="summaryTitle">IPC Argentina hoy, acumulada del año e interanual</h2>
+          <p>Estos indicadores se calculan desde el índice IPC Nacional cargado en el archivo local. No se inventan datos: si el archivo queda desactualizado, la página lo informa y mantiene visible la fuente.</p>
+        </div>
+
+        <div class="metric-grid" id="summaryCards" aria-live="polite">
+          <article class="metric-card skeleton">
+            <span>Inflación último mes</span>
+            <strong>Cargando...</strong>
+          </article>
+          <article class="metric-card skeleton">
+            <span>Inflación acumulada del año</span>
+            <strong>Cargando...</strong>
+          </article>
+          <article class="metric-card skeleton">
+            <span>Inflación interanual</span>
+            <strong>Cargando...</strong>
+          </article>
+          <article class="metric-card skeleton">
+            <span>Último dato publicado</span>
+            <strong>Cargando...</strong>
+          </article>
+        </div>
+
+        <p class="source-note" id="summarySource">Los datos de inflación realizada provienen de fuentes oficiales del INDEC. Las expectativas, si se muestran, son estimaciones del REM del BCRA y no datos observados.</p>
+      </section>
+
+      <!-- AdSense Slot: Top -->
+      <div class="container">
+        <div class="ad-slot" aria-label="Espacio reservado para publicidad superior">Espacio publicitario</div>
+      </div>
+
+      <section class="section container split-section" id="historial" aria-labelledby="historyTitle">
+        <div class="section-heading">
+          <p class="kicker">Compará meses anteriores</p>
+          <h2 id="historyTitle">Inflación mensual histórica argentina</h2>
+          <p>La tabla muestra el índice IPC, la variación mensual, la inflación interanual y la acumulada del año para los últimos 24 meses disponibles.</p>
+        </div>
+
+        <div class="table-wrap" tabindex="0" aria-label="Tabla histórica de IPC">
+          <table>
+            <caption>Últimos 24 meses del IPC Nacional</caption>
+            <thead>
+              <tr>
+                <th scope="col">Mes</th>
+                <th scope="col">IPC / índice</th>
+                <th scope="col">Variación mensual</th>
+                <th scope="col">Interanual</th>
+                <th scope="col">Acumulada del año</th>
+              </tr>
+            </thead>
+            <tbody id="historyTableBody">
+              <tr>
+                <td colspan="5">Cargando historial...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="chart-area" aria-labelledby="chartTitle">
+          <div class="chart-header">
+            <div>
+              <p class="kicker">Mirá la evolución del IPC</p>
+              <h3 id="chartTitle">Inflación mensual de los últimos 12 meses</h3>
+            </div>
+            <p class="chart-unit">Variación % mensual</p>
+          </div>
+          <canvas id="inflationChart" height="340" role="img" aria-label="Gráfico de barras con la inflación mensual de los últimos 12 meses"></canvas>
+        </div>
+      </section>
+
+      <!-- AdSense Slot: Mid Content -->
+      <div class="container">
+        <div class="ad-slot" aria-label="Espacio reservado para publicidad intermedia">Espacio publicitario</div>
+      </div>
+
+      <section class="section container" id="explicacion" aria-labelledby="explainTitle">
+        <div class="section-heading">
+          <p class="kicker">Guía simple</p>
+          <h2 id="explainTitle">Qué significa cada dato de inflación</h2>
+          <p>Una suba mensual alta puede sentirse rápido en compras cotidianas, mientras que la interanual muestra el cambio acumulado contra el mismo mes del año anterior. Por eso conviene mirar ambos números.</p>
+        </div>
+
+        <div class="info-grid">
+          <article>
+            <h3>Qué es el IPC</h3>
+            <p>El Índice de Precios al Consumidor mide la evolución de precios de una canasta representativa de bienes y servicios. En Argentina, el IPC Nacional es publicado por INDEC.</p>
+          </article>
+          <article>
+            <h3>Qué es inflación acumulada</h3>
+            <p>La inflación acumulada compara el índice del último mes disponible contra diciembre del año anterior. Sirve para responder cuánto subieron los precios en lo que va del año.</p>
+          </article>
+          <article>
+            <h3>Qué es inflación interanual</h3>
+            <p>La inflación interanual compara el IPC de un mes contra el mismo mes del año previo. Ayuda a ver la tendencia de doce meses, más allá de movimientos puntuales.</p>
+          </article>
+          <article>
+            <h3>Inflación observada y REM</h3>
+            <p>La inflación observada es la que ya midió INDEC. Las expectativas del REM del BCRA, cuando se agreguen, son proyecciones de analistas y no reemplazan al dato oficial publicado.</p>
+          </article>
+        </div>
+
+        <aside class="cta-banner calculator-banner" aria-labelledby="calculatorBannerTitle">
+          <div>
+            <p class="kicker">Actualizá por IPC</p>
+            <h3 id="calculatorBannerTitle">¿Cuánto tendría que valer hoy un monto anterior?</h3>
+            <p>Usá la calculadora con la serie oficial cargada para estimar poder adquisitivo, sueldos, ahorros o precios de referencia.</p>
+          </div>
+          <a class="button button-primary" href="#calculadora-inflacion">Calcular ahora</a>
+        </aside>
+      </section>
+
+      <section class="section container tool-section inflation-tool-section" id="calculadora-inflacion" aria-labelledby="inflationCalculatorTitle">
+        <div class="section-heading">
+          <p class="kicker">Calculá cuánto equivaldría tu plata hoy</p>
+          <h2 id="inflationCalculatorTitle">Calculadora de inflación argentina</h2>
+          <p>Ingresá un monto, elegí un mes inicial y un mes final para actualizarlo por IPC. También podés usarla para estimar cuánto perdió tu sueldo frente a la inflación si quedó fijo.</p>
+        </div>
+
+        <div class="tool-layout">
+          <form class="tool-form" id="inflationForm">
+            <label for="amountInput">Monto inicial en pesos</label>
+            <input id="amountInput" name="amount" type="number" min="0" step="100" value="100000" inputmode="decimal" required>
+
+            <label for="startPeriodSelect">Mes y año inicial</label>
+            <select id="startPeriodSelect" name="startPeriod" required></select>
+
+            <label for="endPeriodSelect">Mes y año final</label>
+            <select id="endPeriodSelect" name="endPeriod" required></select>
+
+            <button class="button button-primary" type="submit">Calcular inflación</button>
+          </form>
+
+          <div class="result-panel" id="inflationResult" aria-live="polite">
+            <h3>Resultado</h3>
+            <p>Completá los campos para ver el monto ajustado, el porcentaje acumulado del período, la variación en pesos y la pérdida de poder adquisitivo.</p>
+          </div>
+        </div>
+
+        <div class="example-strip" aria-label="Ejemplos de uso">
+          <span>¿Cuánto equivalen $100.000 de enero 2024 a hoy?</span>
+          <span>¿Cuánto perdió mi sueldo frente a la inflación?</span>
+        </div>
+
+        <aside class="cta-banner" aria-labelledby="installmentBannerTitle">
+          <div>
+            <p class="kicker">Cuotas e inflación</p>
+            <h2 id="installmentBannerTitle">¿Querés estimar cuánto aumentaría una cuota?</h2>
+            <p>Probá distintos escenarios con inflación mensual fija o con variaciones reales del IPC histórico.</p>
+          </div>
+          <a class="button button-primary" href="#cuotas">Calcular cuotas</a>
+        </aside>
+      </section>
+
+      <section class="section container tool-section installments-tool-section" id="cuotas" aria-labelledby="installmentsTitle">
+        <div class="section-heading">
+          <p class="kicker">Probá la calculadora de cuotas</p>
+          <h2 id="installmentsTitle">Calculadora de cuotas ajustadas por inflación</h2>
+          <p>Simulá cómo evolucionaría una cuota si se ajusta por una inflación mensual fija o si toma variaciones históricas reales del IPC.</p>
+        </div>
+
+        <div class="tool-layout">
+          <form class="tool-form" id="installmentForm">
+            <fieldset>
+              <legend>Modo de cálculo</legend>
+              <label class="radio-option">
+                <input type="radio" name="installmentMode" value="fixed" checked>
+                Inflación mensual fija
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="installmentMode" value="historical">
+                Inflación histórica real
+              </label>
+            </fieldset>
+
+            <label for="initialInstallmentInput">Valor de cuota inicial</label>
+            <input id="initialInstallmentInput" type="number" min="0" step="100" value="50000" inputmode="decimal" required>
+
+            <label for="installmentMonthsInput">Cantidad de meses</label>
+            <input id="installmentMonthsInput" type="number" min="1" max="60" step="1" value="12" required>
+
+            <div id="fixedRateFields">
+              <label for="fixedMonthlyRateInput">Inflación mensual estimada</label>
+              <input id="fixedMonthlyRateInput" type="number" min="-20" max="100" step="0.1" value="3" inputmode="decimal">
+              <p class="help-text">Ejemplos habituales para simular: 2%, 3% o 5% mensual.</p>
+            </div>
+
+            <div id="historicalFields" hidden>
+              <label for="historicalStartPeriodSelect">Tramo histórico desde</label>
+              <select id="historicalStartPeriodSelect"></select>
+              <p class="help-text">Se aplican las variaciones reales disponibles desde el período elegido.</p>
+            </div>
+
+            <button class="button button-primary" type="submit">Calcular cuotas</button>
+          </form>
+
+          <div class="result-panel" id="installmentResult" aria-live="polite">
+            <h3>Resultado</h3>
+            <p>Elegí un modo para generar la tabla de evolución de cuotas, cuota final, total pagado y porcentaje de aumento.</p>
+          </div>
+        </div>
+
+        <p class="source-note">Esta calculadora es orientativa y no reemplaza condiciones contractuales reales.</p>
+      </section>
+
+      <!-- AdSense Slot: FAQ -->
+      <div class="container">
+        <div class="ad-slot" aria-label="Espacio reservado para publicidad antes de preguntas frecuentes">Espacio publicitario</div>
+      </div>
+
+      <section class="section container" id="faq" aria-labelledby="faqTitle">
+        <div class="section-heading">
+          <p class="kicker">Preguntas frecuentes SEO</p>
+          <h2 id="faqTitle">Dudas comunes sobre inflación argentina</h2>
+          <p>Respuestas rápidas para entender el IPC Argentina hoy, la inflación acumulada, la interanual y las calculadoras del sitio.</p>
+        </div>
+        <div class="faq-list" id="faqList"></div>
+      </section>
+
+      <section class="section container" id="fuentes" aria-labelledby="sourcesTitle">
+        <div class="section-heading">
+          <p class="kicker">Metodología y fuentes</p>
+          <h2 id="sourcesTitle">Fuente oficial visible</h2>
+          <p>Los datos de inflación realizada provienen de fuentes oficiales del INDEC disponibles en Datos Argentina. El archivo local conserva la serie del IPC Nacional y el sitio calcula los porcentajes desde el índice.</p>
+        </div>
+
+        <div class="source-list">
+          <p><strong>Fuente principal:</strong> INDEC / Datos Argentina, IPC Nacional, nivel general, base diciembre 2016.</p>
+          <p><strong>Serie usada:</strong> <code>145.3_INGNACNAL_DICI_M_15</code>.</p>
+          <p><strong>Fuente complementaria:</strong> BCRA REM, opcional para expectativas futuras. No está activada en esta versión.</p>
+          <p><strong>Fecha de actualización del archivo local:</strong> <span id="lastUpdatedSources">Cargando...</span>.</p>
+          <p class="source-note">Los datos de inflación realizada provienen de fuentes oficiales del INDEC. Las expectativas, si se muestran, son estimaciones del REM del BCRA y no datos observados.</p>
+        </div>
+      </section>
+
+      <!-- AdSense Slot: Bottom -->
+      <div class="container">
+        <div class="ad-slot" aria-label="Espacio reservado para publicidad al final del contenido">Espacio publicitario</div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Inflación Hoy Argentina</strong>
+          <p>Información y herramientas de uso orientativo sobre IPC, inflación acumulada, interanual y actualización de montos.</p>
+        </div>
+        <nav aria-label="Navegación del pie">
+          <a href="#resumen">Resumen</a>
+          <a href="#historial">Historial</a>
+          <a href="#calculadora-inflacion">Calculadora inflación</a>
+          <a href="#cuotas">Calculadora cuotas</a>
+          <a href="#fuentes">Fuentes</a>
+        </nav>
+        <p class="footer-note">Este sitio no es oficial ni reemplaza publicaciones del INDEC, contratos, asesoramiento contable, legal o financiero. Imagen: La Boca, Buenos Aires, CC0/Wikimedia Commons.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
